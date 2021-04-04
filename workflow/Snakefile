@@ -1,0 +1,7 @@
+rule make_plot:
+    output:
+        "exp.png"
+    conda:
+        "envs/matplotlib_env.yaml"
+    script:
+        "scripts/make_plot.py"

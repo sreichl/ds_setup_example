@@ -1,4 +1,4 @@
-containerized: "docker://sreichl/ds_setup_example:latest"
+containerized: "docker://sreichl/ds_setup_example"
 
 rule make_plot:
     output:

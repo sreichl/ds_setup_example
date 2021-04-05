@@ -1,12 +1,12 @@
 FROM condaforge/mambaforge:latest
 LABEL io.github.snakemake.containerized="true"
-LABEL io.github.snakemake.conda_env_hash="efe0fe451dadcc0fb5bb8bf86abda2b69fcb92b73a1a2f06e3ceb3e327b448dc"
+LABEL io.github.snakemake.conda_env_hash="8f210dca51dc6e69c402ac5652fbda9d6d9a96502a55c66630de1401ca87fe2a"
 
 # Step 1: Retrieve conda environments
 
 # Conda environment:
 #   source: workflow/envs/matplotlib_env.yaml
-#   prefix: /conda-envs/7553bc0d8c9755a2520c4a0997120007
+#   prefix: /conda-envs/ae761f54ae78988ba67db7145830d6e4
 #   name: matplotlib_env
 #   channels:
 #     - bioconda
@@ -53,10 +53,10 @@ LABEL io.github.snakemake.conda_env_hash="efe0fe451dadcc0fb5bb8bf86abda2b69fcb92
 #     - zlib=1.2.11
 #     - zstd=1.4.9
 #   prefix: /Users/sreichl/miniconda3/envs/matplotlib_env
-RUN mkdir -p /conda-envs/7553bc0d8c9755a2520c4a0997120007
-COPY workflow/envs/matplotlib_env.yaml /conda-envs/7553bc0d8c9755a2520c4a0997120007/environment.yaml
+RUN mkdir -p /conda-envs/ae761f54ae78988ba67db7145830d6e4
+COPY workflow/envs/matplotlib_env.yaml /conda-envs/ae761f54ae78988ba67db7145830d6e4/environment.yaml
 
 # Step 2: Generate conda environments
 
-RUN mamba env create --prefix /conda-envs/7553bc0d8c9755a2520c4a0997120007 --file /conda-envs/7553bc0d8c9755a2520c4a0997120007/environment.yaml && \
+RUN mamba env create --prefix /conda-envs/ae761f54ae78988ba67db7145830d6e4 --file /conda-envs/ae761f54ae78988ba67db7145830d6e4/environment.yaml && \
     mamba clean --all -y

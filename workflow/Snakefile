@@ -1,3 +1,5 @@
+containerized: "docker://sreichl/ds_setup_example:latest"
+
 rule make_plot:
     output:
         "exp.png"

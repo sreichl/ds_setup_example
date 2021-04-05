@@ -10,6 +10,7 @@ LABEL io.github.snakemake.conda_env_hash="efe0fe451dadcc0fb5bb8bf86abda2b69fcb92
 #   name: matplotlib_env
 #   channels:
 #     - bioconda
+#     - conda-forge
 #     - defaults
 #   dependencies:
 #     - blas=1.0

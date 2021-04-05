@@ -1,6 +1,7 @@
 name: matplotlib_env
 channels:
   - bioconda
+  - conda-forge
   - defaults
 dependencies:
   - blas=1.0

@@ -32,7 +32,6 @@ LABEL io.github.snakemake.conda_env_hash="efe0fe451dadcc0fb5bb8bf86abda2b69fcb92
 #     - mkl=2019.4
 #     - mkl-service=2.3.0
 #     - mkl_fft=1.3.0
-#     - mkl_random=1.1.1
 #     - ncurses=6.2
 #     - numpy=1.19.2
 #     - numpy-base=1.19.2
